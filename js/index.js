@@ -8,9 +8,19 @@ function getNews() {
       console.log(data);
       for (var i = 0; i < data.articles.length; i++) {
         console.log(i);
-        $(".news-content").append("<li><a href="+data.articles[i].url+">" + data.articles[i].title + "</a></li>");
-        $(".news-content").append("<li>" + data.articles[i].description + "</li>");
-        $(".news-content").append("<li>Published: " + data.articles[i].publishedAt + "</li>");
+        $(".news-content").append(
+          "<div class='z-depth-1 news-block'><div><img class='news-image' src=" +
+            data.articles[i].urlToImage +
+            " alt='Image not found'/></div><div><li><a href=" +
+            data.articles[i].url +
+            ">" +
+            data.articles[i].title +
+            "</a></li><li>" +
+            data.articles[i].description +
+            "</li><li>Published: " +
+            data.articles[i].publishedAt +
+            "</li></div></div>"
+        );
       }
     }
   });
