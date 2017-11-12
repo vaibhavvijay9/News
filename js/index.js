@@ -6,9 +6,12 @@ function getNews() {
 
     success: function(data) {
       console.log(data);
-      $(".block").text(data.articles[0].title);
-      $(".block").append(data.articles[0].description);
-
+      for (var i = 0; i < data.articles.length; i++) {
+        console.log(i);
+        $(".news-content").append("<li><a href="+data.articles[i].url+">" + data.articles[i].title + "</a></li>");
+        $(".news-content").append("<li>" + data.articles[i].description + "</li>");
+        $(".news-content").append("<li>Published: " + data.articles[i].publishedAt + "</li>");
+      }
     }
   });
 }
