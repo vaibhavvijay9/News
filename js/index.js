@@ -1,6 +1,6 @@
 function getNews() {
     $.ajax({
-        url: "https://newsapi.org/v1/articles?source=the-times-of-india&sortBy=latest&apiKey=06840ae9c7184b5b948435c6b5b41913",
+        url: "https://newsapi.org/v2/top-headlines?sources=google-news-in&apiKey=06840ae9c7184b5b948435c6b5b41913",
         dataType: "json",
 
         success: function(data) {
