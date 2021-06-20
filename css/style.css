@@ -88,6 +88,7 @@ a:hover {
   padding: 7px;
   border: 1px solid #888;
   border-radius: 2px;
+  flex-grow: 1;
 }
 
 .search-btn {
@@ -143,10 +144,6 @@ a:hover {
     border-radius: 4px;
     height: 200px;
     width: 100%;
-  }
-
-  .search-input {
-    flex-grow: 1;
   }
 
   .news {
