@@ -26,7 +26,7 @@ function getNews() {
             if(articles[i].description)
                 articles[i].description = articles[i].description.substring(0, 300);
             $(".news-content").append(
-                "<div class='news-block'><div><img class='news-image' src=" +
+                "<div class='news-block'><div class='img-container'><img class='news-image' src=" +
                 articles[i].image +
                 " alt='News'/></div><div class='news'><li><a class='news-title' href=" +
                 articles[i].url +

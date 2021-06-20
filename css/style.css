@@ -135,13 +135,21 @@ a:hover {
     flex-direction: column;
   }
 
+  .img-container {
+    width: 100%;
+  }
+
   .news-image {
     border-radius: 4px;
     height: 200px;
-    width: 300px;
+    width: 100%;
   }
 
   .search-input {
     flex-grow: 1;
+  }
+
+  .news {
+    padding-left: unset;
   }
 }
