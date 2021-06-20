@@ -3,13 +3,20 @@
 
 <head>
     <title>News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="container">
-    <h3 class="center">News Bulletin</h3>
+    <h1 class="page-title">News Bulletin</h1>
+
+    <div class="search-container">
+        <input class="search-input" type="text" name="search" id="search" placeholder="Search...">
+        <button class="search-btn" onclick="getNews()">Search</button>
+    </div>
 
     <div>
         <ul class='news-content'>
@@ -18,7 +25,6 @@
 
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
