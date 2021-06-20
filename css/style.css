@@ -5,31 +5,60 @@ body {
 ul {
   list-style-type: none;
 }
+
 .news-block {
-  margin: 8px;
+  margin: 18px 8px;
   min-height: 100px;
-  padding: 6px;
+  padding: 15px;
   background: white;
   display: flex;
+  border-radius: 6px;
 }
+
 .news-image {
   border-radius: 100%;
   height: 100px;
   width: 100px;
 }
+
 a {
   font-size: 1.3rem;
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
   color: #0000ee;
 }
+
 .news-block:hover {
-  -webkit-box-shadow: 5px 4px 15px 0px #6c6c6c;
-  box-shadow: 5px 4px 15px 0px #6c6c6c;
+  -webkit-box-shadow: 5px 4px 15px 0px #888;
+  box-shadow: 5px 4px 15px 0px #888;
   transition: all 0.7s;
 }
+
 .news {
   padding-left: 10px;
+}
+
+
+.published-label {
+  font-weight: 600;
+  color: #484848;
+}
+
+.published-value {
+  color: #888888;
+}
+
+.news-description {
+  margin: 5px 0px;
+}
+
+.news-title {
+  color: #484848;
+}
+
+.news-title:hover {
+  color: #484848;
 }
